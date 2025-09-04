@@ -1,0 +1,22 @@
+{
+  "name": "dreams-about-me",
+  "version": "1.0.0",
+  "description": "A personal website that showcases my dreams and aspirations.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process can be defined here'"
+  },
+  "keywords": [
+    "dreams",
+    "personal",
+    "website",
+    "about me"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
