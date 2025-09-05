@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,24 +7,33 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <h1>🌟 Dreams of Zihan Wang 🌟</h1>
+  <div class="menu-toggle">☰</div>
+
+  <nav class="nav-menu" id="navMenu">
+    <a href="#childhood">Childhood Dream</a>
+    <a href="#collab">Collaboration</a>
+    <a href="#current">Current Dream</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+
+  <h1>Dreams of Zihan Wang</h1>
   <p>Hello! My name is Zihan Wang.  
   I am a second-year Computer Science student at UNSW.</p>
 
-  <h2>💭 Childhood Dream</h2>
+  <h2 id="childhood">Childhood Dream</h2>
   <p>When I was young, my dream was to become a music producer.  
   I loved creating beats and melodies that could inspire people.</p>
 
   <div class="music">
-    <p>🎶 Listen to one of my beats:</p>
+    <p>Listen to one of my beats:</p>
     <img src="assets/album-cover.jpg" alt="Album Cover" class="album-cover">
     <audio controls>
       <source src="assets/WorldPop Guitar Rock Energetic Type Beat.mp3" type="audio/mpeg">
     </audio>
   </div>
 
-   <div class="collab">
-    <h2>🎤 Collaboration</h2>
+  <div class="collab" id="collab">
+    <h2> Collaboration</h2>
     <p>Next, I want to share some famous Chinese rappers I had the chance to collaborate with:</p>
     <div class="collab-content">
         <img src="assets/pic.jpg" alt="Album Cover" class="album-cover">
@@ -40,7 +49,7 @@
     </p>
   </div>
 
-  <h2>🚀 Current Dream</h2>
+  <h2 id="current">Current Dream</h2>
   <p>Now, I aspire to become a full-stack developer.  
   I want to build creative and meaningful websites & applications  
   that can bring dreams to life in the digital world.
@@ -48,10 +57,19 @@
   Although I don't have much project experience yet, I hope to learn a lot from this activity!
   </p>
   
-  </body>
-  <h2>📩 Contact Me</h2>
+  <h2 id="contact">Contact Me</h2>
   <p>
     You can reach me at:  
     <a href="mailto:3353682316@qq.com">3353682316@qq.com</a>
   </p>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
 </html>
