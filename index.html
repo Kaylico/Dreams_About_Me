@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+  <div class="shooting-stars"></div>
   <div class="menu-toggle">☰</div>
 
   <nav class="nav-menu" id="navMenu">
@@ -73,3 +74,17 @@
   </script>
 </body>
 </html>
+<script>
+  const container = document.querySelector('.shooting-stars');
+
+  for (let i = 0; i < 15; i++) {
+    const star = document.createElement('div');
+    star.classList.add('shooting-star');
+
+    star.style.left = Math.random() * window.innerWidth + 'px';
+    star.style.animationDelay = (Math.random() * 5) + 's';
+    star.style.animationDuration = (2 + Math.random() * 3) + 's';
+
+    container.appendChild(star);
+  }
+</script>
